@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Happy New Year — Princess Nikita</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page">
+    <section id="countdown-screen" class="screen">
+      <div class="header">A surprise for <span class="name">Princess Nikita</span></div>
+      <div class="dec-underline" aria-hidden="true"></div>
+      <div class="cake-wrap">
+        <div class="cake" aria-hidden="true">
+          <!-- Enhanced inline SVG cake: multiple candles, plate, sprinkles, subtle shading -->
+          <svg viewBox="0 0 640 420" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
+            <defs>
+              <linearGradient id="gTop" x1="0" x2="0" y1="0" y2="1">
+                <stop offset="0%" stop-color="#fff" stop-opacity="0.98" />
+                <stop offset="100%" stop-color="#fff1f6" />
+              </linearGradient>
+              <linearGradient id="gMid" x1="0" x2="0" y1="0" y2="1">
+                <stop offset="0%" stop-color="#ffdff0" />
+                <stop offset="100%" stop-color="#ffb0dd" />
+              </linearGradient>
+              <linearGradient id="gBot" x1="0" x2="0" y1="0" y2="1">
+                <stop offset="0%" stop-color="#e89b82" />
+                <stop offset="100%" stop-color="#ff7a50" />
+              </linearGradient>
+              <filter id="softShadow" x="-50%" y="-50%" width="200%" height="200%">
+                <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#8a5a6a" flood-opacity="0.12" />
+              </filter>
+            </defs>
+
+            <!-- plate shadow -->
+            <ellipse cx="320" cy="350" rx="240" ry="26" fill="rgba(20,10,10,0.06)" />
+
+            <g id="cakeGroup" filter="url(#softShadow)">
+              <!-- bottom layer (cake) -->
+              <path d="M120 260 C200 320 440 320 520 260 L520 220 C440 280 200 280 120 220 Z" fill="url(#gBot)" />
+              <!-- middle layer -->
+              <path d="M140 220 C220 270 420 270 500 220 L500 190 C420 240 220 240 140 190 Z" fill="url(#gMid)" />
+              <!-- top layer -->
+              <path d="M160 190 C240 230 400 230 480 190 L480 170 C400 210 240 210 160 170 Z" fill="url(#gTop)" />
+
+              <!-- icing drip -->
+              <path d="M180 170 C220 205 280 165 320 185 C360 205 420 165 460 185 C500 205 520 170 520 170 L160 170 Z" fill="#ffffff" opacity="0.97" />
+
+              <!-- more sprinkles - scattered colorful little shapes -->
+              <g id="sprinkles">
+                <rect x="220" y="180" width="6" height="14" rx="3" fill="#ffd1e6" transform="rotate(-24 223 187)" />
+                <rect x="260" y="175" width="6" height="12" rx="3" fill="#ffb86b" transform="rotate(12 263 181)" />
+                <rect x="300" y="186" width="6" height="12" rx="3" fill="#b8fff0" transform="rotate(-8 303 192)" />
+                <rect x="340" y="176" width="5" height="11" rx="2" fill="#ffd6e8" transform="rotate(18 342 181)" />
+                <rect x="380" y="190" width="6" height="12" rx="3" fill="#f7ff9e" transform="rotate(-16 383 196)" />
+                <rect x="200" y="200" width="5" height="10" rx="2" fill="#c7e9ff" transform="rotate(8 202 205)" />
+              </g>
+            </g>
+
+            <!-- group of candles (three) -->
+            <g id="candles">
+              <g transform="translate(280,120)" class="candleWrap">
+                <rect x="-6" y="-44" width="12" height="44" rx="4" fill="#fff" stroke="#ffd6e8" stroke-width="1" />
+                <rect x="-4" y="-40" width="8" height="36" rx="3" fill="#ff7fbf" />
+                <g class="flame">
+                  <path d="M0 -44 C5 -54 10 -44 0 -36 C-6 -44 -2 -52 0 -44 Z" fill="#ffd54a" opacity="0.98"/>
+                </g>
+              </g>
+              <g transform="translate(320,110)" class="candleWrap">
+                <rect x="-6" y="-44" width="12" height="44" rx="4" fill="#fff" stroke="#ffd6e8" stroke-width="1" />
+                <rect x="-4" y="-40" width="8" height="36" rx="3" fill="#ffcf6b" />
+                <g class="flame">
+                  <path d="M0 -44 C4 -52 9 -44 0 -36 C-5 -42 -2 -50 0 -44 Z" fill="#ffd54a" opacity="0.98"/>
+                </g>
+              </g>
+              <g transform="translate(360,120)" class="candleWrap">
+                <rect x="-6" y="-44" width="12" height="44" rx="4" fill="#fff" stroke="#ffd6e8" stroke-width="1" />
+                <rect x="-4" y="-40" width="8" height="36" rx="3" fill="#b3ffdf" />
+                <g class="flame">
+                  <path d="M0 -44 C4 -54 10 -44 0 -36 C-6 -44 -2 -52 0 -44 Z" fill="#ffd54a" opacity="0.98"/>
+                </g>
+              </g>
+            </g>
+
+            <!-- detachable slice on the right (more textured) -->
+            <g id="slice" transform="translate(440,230)">
+              <path d="M0 -72 C56 -48 100 -48 140 0 C100 52 56 72 0 72 Z" fill="#f7d5ec" stroke="#f2a0c9" stroke-width="2" />
+              <path d="M14 -32 C50 -22 82 -12 108 8 C84 30 58 40 14 54 Z" fill="#ffd6e8" opacity="0.95" />
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div id="countdown" class="countdown">5</div>
+      <p class="hint">The celebration will open automatically after the countdown.</p>
+    </section>
+  </div>
+  <div class="bg-bubbles" aria-hidden="true">
+    <span class="big animate" style="left:6%;top:8%"></span>
+    <span class="med animate" style="left:78%;top:20%"></span>
+    <span class="small animate" style="left:20%;top:70%"></span>
+    <span class="med animate" style="left:50%;top:6%"></span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
